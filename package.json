@@ -2,9 +2,10 @@
   "name": "shopdroid",
   "version": "1.0.0",
   "description": "shopdroid ui",
-  "main": "app.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "eslint": "eslint",
+    "lint": "eslint. "
   },
   "repository": {
     "type": "git",

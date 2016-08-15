@@ -1,0 +1,13 @@
+### grunt ###
+.tmp/
+dist/
+
+### bower ###
+bower_components/
+
+### npm ###
+node_modules/
+
+### OS generated files ###
+.DS_Store
+.DS_Store?
