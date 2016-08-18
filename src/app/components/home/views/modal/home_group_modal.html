@@ -1,0 +1,20 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Group Details</h4>
+    </div>
+    <div class="modal-body">
+        <p>Group Name: {{gvm.event.title}}</p>
+        <p>Teacher: {{gvm.event.teacher}}</p>
+        <p>Starts At: {{gvm.event.start | formatScheduleDate}}</p>
+        <p>Ends At: {{gvm.event.end | formatScheduleDate}}</p>
+        <p>Students: </p>
+        <ul class="todo-list m-t small-list">
+            <li ng-repeat="student in gvm.event.students">
+                <small class="label label-primary">{{student.s_first_name}} {{student.s_last_name}}</small>
+            </li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="ok()">OK</button>
+    </div>
+</div>

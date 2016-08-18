@@ -5,8 +5,12 @@
 'use strict';
 
 angular.module('shopdroid')
-    .controller('LoginController', function() {
+    .controller('LoginController', function($state) {
       var vm = this;
+
+      vm.submit = function(){
+        $state.go('home.main');
+      };
           //   $scope.credentials = {};
           //   $scope.loginForm = {};
           //   $scope.error = false;

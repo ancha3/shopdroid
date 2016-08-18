@@ -1,0 +1,16 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Class Details</h4>
+    </div>
+    <div class="modal-body">
+        <p>Student: {{cvm.event.student}}</p>
+        <p>Instrument: {{cvm.event.instrument}}</p>
+        <!--<p>Grade: {{cvm.event.grade}}</p>-->
+        <p>Teacher: {{cvm.event.teacher}}</p>
+        <p>Starts At: {{cvm.event.start | formatScheduleDate}}</p>
+        <p>Ends At: {{cvm.event.end | formatScheduleDate}}</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="ok()">OK</button>
+    </div>
+</div>
